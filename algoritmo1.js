@@ -7,7 +7,7 @@ const initialEnd = (str) => {
     const firstWord = cleanStr[0]
     const lastWord = cleanStr[cleanStr.length - 1]
 
-    return ` ${firstWord[0]} , ${lastWord[cleanStr.length - 1]} `
+    return ` ${firstWord[0]} , ${lastWord[0]} `
 
 
 }

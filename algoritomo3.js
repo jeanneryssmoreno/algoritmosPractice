@@ -64,8 +64,13 @@ console.log(intNumber(14))
 
 
 
+const trimestre = (number) => {
 
+    return number < 4 ? 1 : number < 7 ? 2 : number < 10 ? 3 : number <= 12 ? 4 : 'no es valido el mes'
 
+}
+
+console.log(trimestre(11))
 
 
 

@@ -11,6 +11,7 @@ const booleanToString = (b) => {
     return b.toString() ? 'es un booleano' : 'no es valido';
 }
 
+
 console.log(booleanToString(false))
 
 
@@ -55,9 +56,6 @@ const avaliableProducts = (arr) => {
 
 }
 console.log(avaliableProducts(products))
-console.log('fjfjfjf')
 
-
-
-
+console.log(booleanToString(true))
 

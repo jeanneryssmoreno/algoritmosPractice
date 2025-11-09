@@ -35,6 +35,7 @@ const products = [
 const avaliableProducts = (arr) => {
 
     const prductsTrue = arr.filter(element => element.enStock);
+
     const result = prductsTrue.map(element => ({
         ...element,
 

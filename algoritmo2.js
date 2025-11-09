@@ -8,10 +8,6 @@
 
 //  Completa la función que toma una cadena como
 
-//  Completa la función que toma una cadena co
-
-//  Completa la función que toma una cadena como
-
 //  argumento que representa el estado actual de
 //   la luz y devuelve una cadena que representa
 //    el estado al que debe cambiar la luz.
@@ -21,6 +17,34 @@
 let cambioDeLuces = ''
 const controladorSemaforo = (curren) => {
 
+
+
+    return curren === 'yellow' ? 'red' : curren === 'green' ? 'yellow' : undefined
+}
+
+
+
+console.log(controladorSemaforo('yellow'));
+console.log(controladorSemaforo('green'));
+
+
+
+const products = [
+    { nombre: 'lapto', precio: 1200, enStock: true },
+    { nombre: 'telefono', precio: 120, enStock: false },
+    { nombre: 'monitos', precio: 354, enStock: false }]
+
+const avaliableProducts = (arr) => {
+
+    const prductsTrue = arr.filter(element => element.enStock);
+
+    const result = prductsTrue.map(element => ({
+        ...element,
+
+
+        nombre: element.nombre.toUpperCase()
+    }))
+    return result
 
     return curren === 'yellow' ? 'red' : curren === 'green' ? 'yellow' : undefined
 }
@@ -62,6 +86,7 @@ const avaliableProducts = (arr) => {
         nombre: element.nombre.toUpperCase()
     }))
     return result
+
 
 
 

@@ -57,5 +57,7 @@ const avaliableProducts = (arr) => {
 }
 console.log(avaliableProducts(products))
 
+
 console.log(booleanToString(true))
+
 

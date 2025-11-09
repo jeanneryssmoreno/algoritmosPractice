@@ -3,6 +3,7 @@
 // una función que gestione cada cambio de
 //  green, a yellow, a red, y luego a green.
 
+
 //  Completa la función que toma una cadena co
 
 //  Completa la función que toma una cadena como
@@ -15,6 +16,7 @@
 
 let cambioDeLuces = ''
 const controladorSemaforo = (curren) => {
+
 
 
     return curren === 'yellow' ? 'red' : curren === 'green' ? 'yellow' : undefined
@@ -44,10 +46,53 @@ const avaliableProducts = (arr) => {
     }))
     return result
 
+    return curren === 'yellow' ? 'red' : curren === 'green' ? 'yellow' : undefined
+}
+console.log(cambioDeLuces)
+console.log(controladorSemaforo('yellow'))
+
+    if (curren === 'green') {
+        return 'yellow'
+    }
+    if (curren === 'yellow') {
+        return 'red'
+    } if (curren === 'red') {
+        return 'green'
+    }
+
+
+    return curren === 'yellow' ? 'red' : curren === 'green' ? 'yellow' : undefined
+}
+
+
+
+console.log(controladorSemaforo('yellow'));
+console.log(controladorSemaforo('green'));
+
+
+
+const products = [
+    { nombre: 'lapto', precio: 1200, enStock: true },
+    { nombre: 'telefono', precio: 120, enStock: false },
+    { nombre: 'monitos', precio: 354, enStock: false }]
+
+const avaliableProducts = (arr) => {
+
+    const prductsTrue = arr.filter(element => element.enStock);
+    const result = prductsTrue.map(element => ({
+        ...element,
+
+
+        nombre: element.nombre.toUpperCase()
+    }))
+    return result
+
+
 
 
 }
 console.log(avaliableProducts(products))
+
 
 
 

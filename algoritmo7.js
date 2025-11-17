@@ -59,3 +59,52 @@ const productsQuePuedoLLevar = (arr) => {
 console.log(productsQuePuedoLLevar(productos))
 
 
+
+
+////////////////////////////////////////////////
+///////////////////////////////////////////
+//////////////////
+
+
+
+// Ejercicio Fácil — Detectar si una lista forma una progresión aritmética
+// Enunciado
+
+// Dada una lista de números, determina si todos sus términos forman una progresión aritmética (es decir, si la diferencia entre cada par de términos consecutivos es constante).
+
+// Debes plantear al menos dos formas posibles de resolverlo, por ejemplo:
+
+// Con every
+
+// Con reduce
+
+// Con bucles tradicionales o con map
+
+// Ejemplos de entrada y salida
+// Entrada: [2, 4, 6, 8, 10]
+// Salida esperada: true
+
+// Entrada: [3, 6, 10]
+// Salida esperada: false
+
+
+//primer iterar el arreglo
+//2 condicion determinar la condicion de progresion
+//3 la condicion de progrecion la determinamos con la primer
+//diferencia, del primero y el segundo
+//iterar sobre los demas valores si cumplen con esa diferencia
+
+
+
+
+const arimeticProgres = (arr) => {
+
+    let flag = 0
+    return arr.every(num => {
+
+        if (number)
+
+  })
+}
+
+console.log(arimeticProgres([2, 4, 6, 8, 10]))

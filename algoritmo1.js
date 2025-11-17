@@ -63,6 +63,14 @@ const numberDesendent = (number) => {
 }
 console.log(numberDesendent(5))
 
+const reverseString = (str) => {
 
 
+    result = ''
+    for (let index = str.length - 1; index >= 0; index--) {
+        result += str[index]
+    }
+    return result
 
+}
+console.log(reverseString('osodf'))

@@ -46,18 +46,19 @@ let target = 9
 const indexNum = (number, target) => {
 
     for (let i = 0; i < number.length; i++) {
-        for (let j = 1; j < number.length; j++) {
+        for (let j = i + 1; j < number.length; j++) {
 
             if (number[i] + number[j] === target) {
-                return `el resultado es ${[i][j]}`
+                return ` el resultado es ${[i, j]}`
             }
 
         }
-        return
+
     }
+    return []
 }
 
-console.log(indexNum(nums))
+console.log(indexNum(nums, target))
 
 
 
@@ -74,3 +75,27 @@ console.log(squareNum(num))
 
 
 
+
+// Completar la solución de modo que devuelva 
+// verdadero si el primer argumento (cadena) 
+// pasada termina con el segundo argumento (también una cadena).
+
+// Ejemplos:
+
+// Inputs: "abc", "bc"
+// Output: true
+
+// Inputs: "abc", "d"
+// Output: false
+
+//pasos, puedo buscar un metodo que pueda servirme para esto, un metodo de strig
+// o puedo hacer una iteracion que valide que los ultimos numros coinciden con la cadena de texto
+// retornar el resultadp
+
+const lastWords = (str, endPosition) => {
+
+    return str.endsWith(endPosition)
+
+
+}
+console.log(lastWords('abc', 'ito'))

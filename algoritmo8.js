@@ -98,4 +98,4 @@ const lastWords = (str, endPosition) => {
 
 
 }
-console.log(lastWords('abc', 'ito'))
+console.log(lastWords('abc', 'bc'))

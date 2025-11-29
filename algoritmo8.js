@@ -25,6 +25,7 @@ console.log(notDuplicate(numberDuplicate))
 
 
 
+
 //Enunciado
 
 // Dado un array de números y un objetivo (target), 
@@ -40,7 +41,10 @@ console.log(notDuplicate(numberDuplicate))
 
 
 const nums = [2, 7, 11, 15]
-let target = 9
+
+let target = 26
+
+
 
 
 const indexNum = (number, target) => {
@@ -95,7 +99,76 @@ console.log(squareNum(num))
 const lastWords = (str, endPosition) => {
 
     return str.endsWith(endPosition)
+}
+console.log(lastWords('abc', 'bc'))
+
+
+
+
+// le preguntas a una niña pequeña "¿Cuántos años tienes?"
+// Ella siempre dice "x años", donde xes un número aleatorio entre 0y 9.
+// Escriba un programa que devuelva la edad de la niña (0-9) como un entero.
+// Suponga que la cadena de entrada de prueba siempre es válida. Por ejemplo,
+// la entrada de prueba podría ser "1 año" o "5 años".
+// El primer carácter de la cadena siempre es un número
+
+//primero lo que haremos sera tener el indice del numero, y que solo verifique 
+//el numero que estamos buscando, que no tome en cuenta los string
+
+const yearsX = '4 years old'
+
+const yearsTheGirls = (str) => {
+
+    return Number(str[0])
+
+}
+console.log(yearsTheGirls(yearsX))
+
+
+
+// Suma
+// Escriba un programa que calcule 
+// la suma de todos los números del 1 al num
+//  (ambos inclusive). El número siempre será un 
+//  entero positivo mayor que 0. Su función solo
+//   necesita devolver el resultado.
+//    Lo que se muestra entre paréntesis en el ejemplo a 
+//    continuación es cómo obtenerlo y no forma parte del mismo; 
+//    consulte las pruebas de ejemplo.
+
+// Por ejemplo (Entrada -> Salida) :
+// 2 -> 3 (1 + 2)
+// 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+
+const number = 10
+const resultAlgorit = (number) => number * (number + 1) / 2
+
+console.log(resultAlgorit(number))
+
+
+const number2 = 10
+
+const result2 = (num) => {
+    let total = 0
+    for (let i = 0; i <= num; i++) {
+        total += i
+    }
+
+    return total
+}
+console.log(result2(number2))
+
+
+let words = 'hello wordl!!!'
+
+const removeExclamationMarks = (str) => str.replace(/!/g, '')
+
+console.log(removeExclamationMarks(words))
+
+
+    return str.endsWith(endPosition)
 
 
 }
 console.log(lastWords('abc', 'ito'))
+

@@ -26,7 +26,6 @@ console.log(notDuplicate(numberDuplicate))
 
 
 
-
 //Enunciado
 
 // Dado un array de números y un objetivo (target), 
@@ -42,7 +41,10 @@ console.log(notDuplicate(numberDuplicate))
 
 
 const nums = [2, 7, 11, 15]
+
 let target = 26
+
+
 
 
 const indexNum = (number, target) => {
@@ -95,6 +97,7 @@ console.log(squareNum(num))
 // retornar el resultadp
 
 const lastWords = (str, endPosition) => {
+
     return str.endsWith(endPosition)
 }
 console.log(lastWords('abc', 'bc'))
@@ -161,3 +164,11 @@ let words = 'hello wordl!!!'
 const removeExclamationMarks = (str) => str.replace(/!/g, '')
 
 console.log(removeExclamationMarks(words))
+
+
+    return str.endsWith(endPosition)
+
+
+}
+console.log(lastWords('abc', 'ito'))
+

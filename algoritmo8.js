@@ -134,11 +134,30 @@ console.log(yearsTheGirls(yearsX))
 //    consulte las pruebas de ejemplo.
 
 // Por ejemplo (Entrada -> Salida) :
-
 // 2 -> 3 (1 + 2)
 // 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 
-const number = 8
+const number = 10
 const resultAlgorit = (number) => number * (number + 1) / 2
 
 console.log(resultAlgorit(number))
+
+
+const number2 = 10
+
+const result2 = (num) => {
+    let total = 0
+    for (let i = 0; i <= num; i++) {
+        total += i
+    }
+
+    return total
+}
+console.log(result2(number2))
+
+
+let words = 'hello wordl!!!'
+
+const removeExclamationMarks = (str) => str.replace(/!/g, '')
+
+console.log(removeExclamationMarks(words))
